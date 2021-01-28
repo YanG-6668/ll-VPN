@@ -1,0 +1,28 @@
+.header
+  margin-bottom: 90px
+
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 50px
+
+  &__navigation-list
+    display: flex
+    align-items: center
+
+  &__navigation-item
+    &:not(:last-child)
+      margin-right: 40px
+
+  &__navigation-link
+    line-height: 19px
+    color: $grayColorText
+
+  &__btns-btn
+    +rubik-medium
+    font-size: 16px
+    line-height: 19px
+    color: $darkBlueColorTitle
+    background: transparent
+    margin-right: 25px

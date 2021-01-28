@@ -1,0 +1,22 @@
+.features {
+  margin-bottom: 100px;
+}
+.features__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+.features__image {
+  justify-self: center;
+}
+.features__content {
+  max-width: 430px;
+  width: 100%;
+  justify-self: flex-end;
+}
+.features__content-title {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #0b132a;
+}

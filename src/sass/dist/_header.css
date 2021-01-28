@@ -1,0 +1,12 @@
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__navigation-list {
+  display: flex;
+  align-items: center;
+}
+.header__navigation-item:not(:last-child) {
+  margin-right: 40px;
+}
