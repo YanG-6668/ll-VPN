@@ -1,0 +1,90 @@
+.footer
+  background-color: #f8f8f8
+  padding: 0px 0 100px
+  // position: relative
+
+  &__wrapper
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+
+  &__info
+    max-width: 350px
+
+  &__logo
+    margin-bottom: 20px
+
+  &__info-text 
+    margin-bottom: 30px
+
+  &__socials
+    display: flex
+    height: 35px
+    margin-bottom: 30px
+  
+  &__socials-link
+    display: block
+    position: relative
+    z-index: 1
+    svg
+      width: 35px
+      height: 35px
+      fill: #fff
+    &::before
+      position: absolute
+      content: ""
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: -1
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      box-shadow: 0px 8px 20px 0px rgba(0,0,0, 0.3)
+      background-color: #f53838
+    &:not(:last-child)
+      margin-right: 20px
+      
+
+  &__copyright
+    color: #afb5c0
+
+  &__navigation
+    display: flex
+    justify-content: space-between
+    // align-items: center
+
+  &__item-title
+    +rubik-medium
+    font-size: 18px
+    color: #0b132a
+    margin-bottom: 20px
+
+  &__list-item
+    &:not(:last-child)
+      margin-bottom: 10px
+  &__list-link
+    color: #4f5665
+
+
+.subscribe-now 
+  background-color: #fff
+  position: relative
+  top: -120px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 55px 65px
+  border-radius: 10px
+  box-shadow: 0px 20px 45px 0px rgba(0,0,0,0.15);
+
+  &__content
+    max-width: 370px
+  &__content-title
+    +rubik-medium
+    font-size: 35px
+    line-height: 45px
+    color: #0b132a
+    margin-bottom: 10px
+  
+  &__btn 
+    padding: 15px 65px

@@ -1,33 +1,44 @@
 .testimonials
-  width: 100%
-  // background-color: #fbfbfb
-  background-color: #000
-  padding: 50px 0
+  padding: 50px 0 180px
   &__slider
-    // max-width: 100%
-    // width: 500px
-    overflow: visible
-    display: flex
-    // display: block
-    // justify-content: flex-start
-    // align-items: start
-    // flex-wrap: wrap
+    position: relative
+    width: 100vw
+    margin-bottom: 50px
+    
+  &__btns
+    text-align: right
+  &__btns-prev,
+  &__btns-next
+    font-size: 20px
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 2px solid $redBG
+    background-color: $redBG
+    color: #fff
+    &.slick-disabled
+      background-color: transparent
+      color: $redBG
+      
+  &__btns-prev
+    margin-right: 20px
+    
 
   &__item
-    display: flex
-    flex-direction: column
-
-    // width: 300px
-    margin-right: 30px
-
+    max-width: 400px
+    width: 100%
+    // min-height: 100%
+    // display: flex
+    // flex-direction: column
     padding: 30px
     border: 2px solid #ddd
     border-radius: 10px
+    margin-right: 50px
 
   &__author
-    // display: flex
-    // justify-content: space-between
-    // align-items: center
+    display: flex
+    justify-content: space-between
+    align-items: center
 
   &__author-img
     margin-right: 20px
@@ -38,3 +49,21 @@
   &__author-rate
     margin-left: auto
 
+
+.slick-dots
+  position: absolute
+  top: 310px
+  left: 0
+  width: 80px
+  li.slick-active button:before
+    background-color: red
+
+  .slick-active button:before
+    width: 20px
+    border-radius: 12px
+
+.slick-slide
+
+  &.slick-current
+    .testimonials__item
+      border: 2px solid red

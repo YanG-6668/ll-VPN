@@ -1,0 +1,27 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 150px 0 100px;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer__info {
+  max-width: 350px;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__info-text {
+  margin-bottom: 30px;
+}
+.footer__socials {
+  margin-bottom: 20px;
+}
+.footer__copyright {
+  color: #afb5c0;
+}
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+}
