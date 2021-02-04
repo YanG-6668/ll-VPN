@@ -1,0 +1,44 @@
+{% import "data/data.html" as data %}
+<!-- BEGIN footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__info">
+        <a href="#" class="logo logo_footer">
+          {{ mixins.icon('logo') }}
+          <div class="logo__text">Lasles<strong>VPN</strong></div>
+        </a>
+        <p class="footer__info-text">
+          <strong>{{data.footer.mainText}}</strong> {{data.footer.text}}
+        </p>
+        <div class="footer__socials">
+          {% for item in data.footer.socials %}
+          <a href="{{item.url}}" class="footer__socials-link">
+            {{ mixins.icon(item.icon) }}
+          </a>
+          {% endfor %}
+        </div>
+        <a href="#" class="footer__copyright">
+          ©2020Lasles<strong>VPN</strong>
+        </a>
+      </div>
+      <div class="footer__navigation">
+        {% for item in data.footer.lists %}
+        <div class="footer__item">
+          <h5 class="footer__item-title">
+            {{item.title}}
+          </h5>
+          <ul class="footer__list">
+            {% for link in item.list %}
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="{{link.url}}">{{link.title}}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END footer -->

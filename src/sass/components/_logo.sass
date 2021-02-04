@@ -1,0 +1,23 @@
+.logo
+	+flex(normal, center)
+	color: $mainColorTitle
+	+tr(color 0.3s ease)
+
+	&:hover 
+		color: $mainRedColor
+
+	svg
+		z-index: 6
+		width: 35px
+		height: 35px
+		fill: $mainRedColor 
+
+	&__text
+		+rubik-medium
+		+fs(20)
+		margin-left: 10px
+
+	&_footer
+		margin-bottom: 20px
+		svg
+			z-index: -1

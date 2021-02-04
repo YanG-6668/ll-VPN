@@ -1,0 +1,79 @@
+.slider
+  &__slides
+    position: relative
+    width: 100vw
+    margin-bottom: 50px
+    +r(445)
+      max-width: 300px
+      margin: 0 auto 50px
+  &__item
+    max-width: 400px
+    width: 100%
+    min-height: 250px
+
+    border: 2px solid #ddd
+    border-radius: 10px
+    padding: 30px
+    margin-right: 50px
+    transition: min-height 0.5s ease
+
+    +r(445)
+      max-width: 300px
+      margin: 0 auto
+  &__author
+    +flex(normal, center)
+
+  &__author-img
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    margin-right: 20px
+
+  &__author-rate
+    margin-left: auto
+    svg
+      +fs(14)
+      fill: #fea250
+  &__btns
+    +flex(flex-end, center)
+    +r(445)
+      justify-content: center
+  &__btns-prev,
+  &__btns-next
+    +fs(18)
+    +flex(center, center)
+    width: 60px
+    height: 60px
+
+    border-radius: 50%
+    border: 2px solid $mainRedColor
+    background-color: $mainRedColor
+    svg
+      fill: #fff
+    &.slick-disabled
+      background-color: transparent
+      svg
+        fill: $mainRedColor
+
+        color: $mainRedColor
+
+  &__btns-prev
+    margin-right: 20px
+
+.slick-dots
+  position: absolute
+  top: 320px
+  left: 0
+  width: 80px
+  li.slick-active button:before
+    background-color: $mainRedColor
+
+  .slick-active button:before
+    width: 20px
+    border-radius: 12px
+
+.slick-slide
+
+  &.slick-current
+    .slider__item
+      border: 2px solid $mainRedColor

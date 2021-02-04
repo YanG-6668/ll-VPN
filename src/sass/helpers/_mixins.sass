@@ -27,7 +27,10 @@
     
 =fs($sizeValue: 16)
   font-size: $sizeValue + px
-  font-size: $sizeValue / 10 + rem
+  // font-size: $sizeValue / 10 + rem
+
+=lh($lineHeightValue: 16)
+  line-height: $lineHeightValue + px
 
 =text-overflow
   overflow: hidden
@@ -48,8 +51,8 @@
 =pseudo
   @extend %pseudo
 
-=coverdiv
-  position: absolute
+=coverdiv($position: absolute)
+  position: $position
   top: 0
   left: 0
   width: 100%
@@ -300,3 +303,5 @@
     position: absolute
     top: 50%
     transform: translateY(-50%)
+
+

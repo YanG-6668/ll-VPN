@@ -1,0 +1,49 @@
+.promo
+  margin-bottom: $sectionMargin
+  display: flex
+  flex-wrap: wrap
+  +sm
+    margin-bottom: $sectionMargin / 2
+
+  &__content,
+  &__image
+    flex: 1
+    min-width: 385px
+    +xs
+      min-width: 300px
+
+  &__image
+    flex-basis: 60%
+  &__content
+    flex-basis: 40%
+    +md
+      order: 1
+
+  &__content-title
+    +rubik-medium
+    +fs(50)
+    +lh(70)
+    color: $mainColorTitle
+    margin-bottom: 20px
+    span
+      +rubik-bold
+    +md
+      +fs(36)
+      +lh(50)
+
+  &__content-text
+    color: $mainColorText
+    margin-bottom: 50px
+    span
+      +rubik-medium
+    +sm
+      margin-bottom: 20px
+
+  &__image
+    position: relative
+    right: -40px
+    +lg
+      right: 0
+  &__image-img
+    max-width: 100%
+    width: 100%

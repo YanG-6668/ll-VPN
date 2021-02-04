@@ -1,0 +1,49 @@
+.navbar-mobile
+  +coverdiv(fixed)
+  z-index: 5
+  
+  transform: translateX(-100%)
+  background-color: $navbarBG
+  padding: 40px
+
+  +flex(center, normal)
+  flex-direction: column
+
+  +tr(transform 0.5s ease)
+
+  +sm
+    padding: 15px
+  +rh(415)
+    flex-direction: row
+    align-items: flex-end
+    justify-content: flex-start
+
+  &.is-active
+    transform: translateX(0)
+
+  &__list
+    margin-bottom: 30px
+    +rh(415)
+      margin: 0 20px 0 0
+
+  &__list-item
+    &:not(:last-child)
+      margin-bottom: 15px
+      +rh(415)
+        margin-bottom: 10px
+      
+  &__list-link
+    +fs(48)
+    +lh(60)
+    letter-spacing: 2px
+    color: #fff
+    +xxs
+      +fs(30)
+      +lh(42)
+    +rh(415)
+      +fs(30)
+      +lh(40)
+
+  &__btns 
+    +flex(normal, flex-start)
+    flex-direction: column

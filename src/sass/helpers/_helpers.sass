@@ -20,6 +20,10 @@
 =gpu
   transform: translate3d(0,0,0)
 
+=lg
+  +r(1279)
+    @content
+
 =md
   +r(1023)
     @content
@@ -31,3 +35,11 @@
 =xs
   +r(599)
     @content
+=xxs
+  +r(374)
+    @content
+
+=flex($justify-content: normal,$align-items: normal)
+  display: flex
+  justify-content: $justify-content
+  align-items: $align-items

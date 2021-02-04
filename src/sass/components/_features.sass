@@ -1,0 +1,30 @@
+.features 
+  margin-bottom: $sectionMargin
+  display: flex
+  flex-wrap: wrap
+  +sm
+    margin-bottom: $sectionMargin / 2
+
+  &__image,
+  &__content
+    flex: 1
+    min-width: 290px
+
+  &__image
+    flex-basis: 60%
+  &__content
+    flex-basis: 40%
+
+  &__list-item
+    +fs(14)
+    +flex(normal, center) 
+
+    svg
+      width: 20px
+      height: 20px
+      fill: $checkIconColor
+      margin-right: 10px
+
+    &:not(:last-child)
+      margin-bottom: 15px
+      

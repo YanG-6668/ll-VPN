@@ -1,31 +1,56 @@
 {% import "partials/_mixins.html" as mixins %}
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="theme-color" content="#fff"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" media="all" href="css/app.css"/>
-    {# {% include "../partials/_media-tags.html" %} #}
-  </head>
-  <body>
 
-    <!-- BEGIN content -->
-    <div class="out">
-      {% block content %}{% endblock %}
+<head>
+  <meta charset="utf-8" />
+  <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" media="all" href="css/app.css" />
+  {# {% include "../partials/_media-tags.html" %} #}
+</head>
+
+<body>
+
+  <!-- BEGIN  page -->
+  <div class="page">
+
+    <!-- BEGIN  container -->
+    <div class="container">
+      {% block header %}
+      {% include "../partials/_header.html" %}
+      {% endblock %}
+
+      <!-- BEGIN content -->
+      <div class="out">
+        {% block content %}{% endblock %}
+      </div>
+      <!-- END content -->
+
     </div>
-    <!-- END content -->
+    {% block footer %}
+    {% include "../partials/_footer.html" %}
+    {% endblock %}
+    <!-- END container -->
 
-    <!-- BEGIN scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-    <script type="text/javascript" src="js/app.js"></script>
-    <!-- END scripts -->
+  </div>
+  <!-- END page -->
 
-  </body>
+
+
+  <!-- BEGIN scripts -->
+  <script>
+    navigator.serviceWorker.register("../js/sw.js")
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <!-- END scripts -->
+
+</body>
+
 </html>

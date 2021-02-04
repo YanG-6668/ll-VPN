@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-r" viewBox="0 0 20 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-left" viewBox="0 0 20 19">
     <path d="M18.75 8.003H3.925l4.538-5.45a1.252 1.252 0 0 0-1.925-1.6l-6.25 7.5c-.043.06-.08.122-.113.187 0 .063 0 .1-.087.163a1.25 1.25 0 0 0-.088.45c.001.154.03.307.088.45 0 .062 0 .1.087.162.033.066.07.128.112.188l6.25 7.5a1.25 1.25 0 0 0 1.763.162 1.25 1.25 0 0 0 .162-1.762l-4.537-5.45H18.75a1.25 1.25 0 0 0 0-2.5z"/>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 20 19">
+    <path d="M1.25 8.003h14.825l-4.537-5.45a1.251 1.251 0 1 1 1.925-1.6l6.25 7.5c.041.06.08.122.112.187 0 .063 0 .1.088.163.056.143.086.296.087.45a1.25 1.25 0 0 1-.087.45c0 .062 0 .1-.088.162-.033.066-.07.128-.113.188l-6.25 7.5a1.25 1.25 0 0 1-.962.45 1.25 1.25 0 0 1-.963-2.05l4.538-5.45H1.25a1.25 1.25 0 0 1 0-2.5z"/>
 </symbol><symbol id="icon-check-circle" viewBox="0 0 21 21">
     <path d="M10.121.55c-5.514 0-10 4.485-10 10 0 5.513 4.486 10 10 10s10-4.487 10-10c0-5.515-4.485-10-10-10zM8.122 14.961l-3.005-2.999a1 1 0 1 1 1.412-1.415l1.591 1.588 4.588-4.587a1 1 0 1 1 1.413 1.414l-5.999 6z"/>
 </symbol><symbol id="icon-check" viewBox="0 0 14 10">

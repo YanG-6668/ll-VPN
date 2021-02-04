@@ -1,1 +1,39 @@
-<p>Hello from partials/_header.html</p>
+{% import "data/data.html" as data %}
+<header class="header">
+  <a href="#" class="logo">
+    {{ mixins.icon('logo') }}
+    <div class="logo__text">Lasles<strong>VPN</strong></div>
+  </a>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      {% for item in data.header.navigation %}
+      <li class="navigation__list-item">
+        <a href="{{item.url}}" class="navigation__list-link">
+          {{item.title}}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="header__btns">
+    <button class="button button_margin">{{data.header.signIn}}</button>
+    <button class="button-border">{{data.header.signUp}}</button>
+  </div>
+  <div class="burger-menu"></div>
+
+  <nav class="navbar-mobile">
+    <ul class="navbar-mobile__list">
+      {% for item in data.header.navigation %}
+      <li class="navbar-mobile__list-item">
+        <a href="{{item.url}}" class="navbar-mobile__list-link">
+          {{item.title}}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="navbar-mobile__btns">
+      <button class="button button_mobile">{{data.header.signIn}}</button>
+      <button class="button-border">{{data.header.signUp}}</button>
+    </div>
+  </nav>
+</header>
