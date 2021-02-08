@@ -1,8 +1,8 @@
 import './lib/slick';
 
 const slider = () => {
-  const $prev = document.querySelector('.slider__btns-prev');
-  const $next = document.querySelector('.slider__btns-next');
+  const $prev = $('.slider__btns-prev');
+  const $next = $('.slider__btns-next');
   
   $('.slider__slides').slick({
     infinite: false,

@@ -87,7 +87,7 @@
             <!-- END promo__content -->
             <!-- BEGIN promo__image -->
             <div class="promo__image">
-              <img src="img/promo-image.svg" alt="promo image" class="promo__image-img" />
+              <img loading="lazy" decoding="async" src="./img/promo.svg" alt="promo image" class="promo__image-img" />
             </div>
             <!-- END promo__image -->
             <!-- BEGIN advantages -->
@@ -128,7 +128,7 @@
           <!-- END promo -->
           <!-- BEGIN features-->
           <section class="features">
-            <img src="img/features-image.svg" alt="feature image" class="features__image" />
+            <img loading="lazy" decoding="async" src="img/features.svg" alt="feature image" class="features__image" />
             <div class="features__content">
               <div class="super-content super-content_features">
                 <h2 class="super-content__title super-content__title_features"> We Provide Many Features You Can Use </h2>
@@ -167,8 +167,8 @@
             </div>
             <div class="rates__wrapper">
               <div class="rates__item">
-                <img src="img/free-plan.svg" alt="Plan" class="rates__item-img" />
-                <h5 class="rates__item-title"> Free Plan </h5>
+                <img loading="lazy" decoding="async" src="img/free-plan.svg" alt="Plan" class="rates__item-img" />
+                <h4 class="rates__item-title"> Free Plan </h4>
                 <ul class="rates__list">
                   <li class="rates__list-item">
                     <svg class="icon icon-check">
@@ -192,14 +192,14 @@
                   </li>
                 </ul>
                 <div class="rates__price">
-                  <h3 class="rates__price-title"> Free <span></span>
-                  </h3>
+                  <h5 class="rates__price-title"> Free <span></span>
+                  </h5>
                   <button class="button-border rates__price-btn"> Select </button>
                 </div>
               </div>
               <div class="rates__item">
-                <img src="img/standard-plan.svg" alt="Plan" class="rates__item-img" />
-                <h5 class="rates__item-title"> Standard Plan </h5>
+                <img loading="lazy" decoding="async" src="img/standard-plan.svg" alt="Plan" class="rates__item-img" />
+                <h4 class="rates__item-title"> Standard Plan </h4>
                 <ul class="rates__list">
                   <li class="rates__list-item">
                     <svg class="icon icon-check">
@@ -228,14 +228,14 @@
                   </li>
                 </ul>
                 <div class="rates__price">
-                  <h3 class="rates__price-title"> $9 <span>/ mo</span>
-                  </h3>
+                  <h5 class="rates__price-title"> $9 <span>/ mo</span>
+                  </h5>
                   <button class="button-border rates__price-btn"> Select </button>
                 </div>
               </div>
               <div class="rates__item">
-                <img src="img/premium-plan.svg" alt="Plan" class="rates__item-img" />
-                <h5 class="rates__item-title"> Premium Plan </h5>
+                <img loading="lazy" decoding="async" src="img/premium-plan.svg" alt="Plan" class="rates__item-img" />
+                <h4 class="rates__item-title"> Premium Plan </h4>
                 <ul class="rates__list">
                   <li class="rates__list-item">
                     <svg class="icon icon-check">
@@ -269,8 +269,8 @@
                   </li>
                 </ul>
                 <div class="rates__price">
-                  <h3 class="rates__price-title"> $12 <span>/ mo</span>
-                  </h3>
+                  <h5 class="rates__price-title"> $12 <span>/ mo</span>
+                  </h5>
                   <button class="button-border rates__price-btn"> Select </button>
                 </div>
               </div>
@@ -285,16 +285,34 @@
             </div>
             <!-- BEGIN global-network__card -->
             <div class="global-network__card">
-              <img src="img/global-network.svg" alt="global network" class="global-network__card-img" />
+              <picture>
+                <source srcset="./img/card.webp" type="image/webp">
+                <img loading="lazy" decoding="async" src="./img/card.png" alt="global network" class="global-network__card-img" />
+              </picture>
             </div>
             <!-- END global-network__card -->
             <!-- BEGIN partners -->
             <div class="partners">
-              <img src="../img/netflix.png" alt="partner" class="partners__item" />
-              <img src="../img/reddit.png" alt="partner" class="partners__item" />
-              <img src="../img/amazon.png" alt="partner" class="partners__item" />
-              <img src="../img/discord.png" alt="partner" class="partners__item" />
-              <img src="../img/spotify.png" alt="partner" class="partners__item" />
+              <picture>
+                <source srcset="../img/netflix.webp" type="image/webp">
+                <img loading="lazy" decoding="async" src="../img/netflix.png" alt="partner" class="partners__item" />
+              </picture>
+              <picture>
+                <source srcset="../img/reddit.webp" type="image/webp">
+                <img loading="lazy" decoding="async" src="../img/reddit.png" alt="partner" class="partners__item" />
+              </picture>
+              <picture>
+                <source srcset="../img/amazon.webp" type="image/webp">
+                <img loading="lazy" decoding="async" src="../img/amazon.png" alt="partner" class="partners__item" />
+              </picture>
+              <picture>
+                <source srcset="../img/discord.webp" type="image/webp">
+                <img loading="lazy" decoding="async" src="../img/discord.png" alt="partner" class="partners__item" />
+              </picture>
+              <picture>
+                <source srcset="../img/spotify.webp" type="image/webp">
+                <img loading="lazy" decoding="async" src="../img/spotify.png" alt="partner" class="partners__item" />
+              </picture>
             </div>
             <!-- END partners -->
           </section>
@@ -309,7 +327,10 @@
               <div class="slider__slides">
                 <div class="slider__item">
                   <div class="slider__author">
-                    <img src="../img/testimonial1.png" alt="person" class="slider__author-img" />
+                    <picture>
+                      <source srcset="../img/testimonial1.webp" type="image/webp">
+                      <img loading="lazy" decoding="async" src="../img/testimonial1.png" alt="person" class="slider__author-img" />
+                    </picture>
                     <div class="slider__info">
                       <h4 class="slider__info-name">Viezh Robert</h4>
                       <span class="slider__info-location">Warsaw, Poland</span>
@@ -323,7 +344,10 @@
                 </div>
                 <div class="slider__item">
                   <div class="slider__author">
-                    <img src="../img/testimonial2.png" alt="person" class="slider__author-img" />
+                    <picture>
+                      <source srcset="../img/testimonial2.webp" type="image/webp">
+                      <img loading="lazy" decoding="async" src="../img/testimonial2.png" alt="person" class="slider__author-img" />
+                    </picture>
                     <div class="slider__info">
                       <h4 class="slider__info-name">Yessica Christy</h4>
                       <span class="slider__info-location">Shanxi, China</span>
@@ -337,7 +361,10 @@
                 </div>
                 <div class="slider__item">
                   <div class="slider__author">
-                    <img src="../img/testimonial3.png" alt="person" class="slider__author-img" />
+                    <picture>
+                      <source srcset="../img/testimonial3.webp" type="image/webp">
+                      <img loading="lazy" decoding="async" src="../img/testimonial3.png" alt="person" class="slider__author-img" />
+                    </picture>
                     <div class="slider__info">
                       <h4 class="slider__info-name">Kim Young Jou</h4>
                       <span class="slider__info-location">Seoul, South Korea</span>
@@ -351,7 +378,10 @@
                 </div>
                 <div class="slider__item">
                   <div class="slider__author">
-                    <img src="../img/testimonial1.png" alt="person" class="slider__author-img" />
+                    <picture>
+                      <source srcset="../img/testimonial1.png.webp" type="image/webp">
+                      <img loading="lazy" decoding="async" src="../img/testimonial1.png.png" alt="person" class="slider__author-img" />
+                    </picture>
                     <div class="slider__info">
                       <h4 class="slider__info-name">Viezh Robert</h4>
                       <span class="slider__info-location">Warsaw, Poland</span>
@@ -493,10 +523,34 @@
     <!-- END page -->
     <!-- BEGIN scripts -->
     <script>
-      navigator.serviceWorker.register("../js/sw.js")
+      // navigator.serviceWorker.register("/sw/sw.js")
+      if ('serviceWorker' in navigator)
+      {
+        navigator.serviceWorker.register('/sw/sw.js',
+        {
+          scope: '/sw/'
+        }).then(function(reg)
+        {
+          if (reg.installing)
+          {
+            console.log('Service worker installing');
+          }
+          else if (reg.waiting)
+          {
+            console.log('Service worker installed');
+          }
+          else if (reg.active)
+          {
+            console.log('Service worker active');
+          }
+        }).catch(function(error)
+        {
+          // registration failed
+          console.log('Registration failed with ' + error);
+        });
+      }
 
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
   </body>

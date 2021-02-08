@@ -27,7 +27,7 @@ title: LaslesVPN
 	<!-- END promo__content -->
 	<!-- BEGIN promo__image -->
 	<div class="promo__image">
-		<img src="{{data.promo.image}}" alt="promo image" class="promo__image-img" />
+		<img loading="lazy" decoding="async" src="{{data.promo.image}}" alt="promo image" class="promo__image-img" />
 	</div>
 	<!-- END promo__image -->
 	<!-- BEGIN advantages -->
@@ -50,7 +50,7 @@ title: LaslesVPN
 
 <!-- BEGIN features-->
 <section class="features">
-	<img src="{{data.features.image}}" alt="feature image" class="features__image" />
+	<img loading="lazy" decoding="async" src="{{data.features.image}}" alt="feature image" class="features__image" />
 	<div class="features__content">
 		<div class="super-content super-content_features">
 			<h2 class="super-content__title super-content__title_features">
@@ -83,19 +83,19 @@ title: LaslesVPN
 	<div class="rates__wrapper">
 		{% for item in data.rates.plans %}
 		<div class="rates__item">
-			<img src="{{item.image}}" alt="Plan" class="rates__item-img" />
-			<h5 class="rates__item-title">
+			<img loading="lazy" decoding="async" src="{{item.image}}" alt="Plan" class="rates__item-img" />
+			<h4 class="rates__item-title">
 				{{item.title}}
-			</h5>
+			</h4>
 			<ul class="rates__list">
 				{% for item in item.list %}
 				<li class="rates__list-item">{{ mixins.icon('check') }}{{item.title}}</li>
 				{% endfor %}
 			</ul>
 			<div class="rates__price">
-				<h3 class="rates__price-title">
+				<h5 class="rates__price-title">
 					{{item.price}} <span>{{item.month}}</span>
-				</h3>
+				</h5>
 				<button class="button-border rates__price-btn">
 					{{item.button}}
 				</button>
@@ -118,13 +118,19 @@ title: LaslesVPN
 	</div>
 	<!-- BEGIN global-network__card -->
 	<div class="global-network__card">
-		<img src="{{data.globalNetwork.image}}" alt="global network" class="global-network__card-img" />
+		<picture>
+			<source srcset="./img/{{data.globalNetwork.image}}.webp" type="image/webp" />
+			<img loading="lazy" decoding="async" src="./img/{{data.globalNetwork.image}}.png" alt="global network" class="global-network__card-img" />
+		</picture>
 	</div>
 	<!-- END global-network__card -->
 	<!-- BEGIN partners -->
 	<div class="partners">
 		{% for item in data.partners %}
-		<img src="{{item.image}}" alt="partner" class="partners__item" />
+		<picture>
+			<source srcset="{{item.image}}.webp" type="image/webp" />
+			<img loading="lazy" decoding="async" src="{{item.image}}.png" alt="partner" class="partners__item" />
+		</picture>
 		{% endfor %}
 	</div>
 	<!-- END partners -->
@@ -147,7 +153,11 @@ title: LaslesVPN
 			{% for item in data.testimonials.persons %}
 			<div class="slider__item">
 				<div class="slider__author">
-					<img src="{{item.image}}" alt="person" class="slider__author-img" />
+					<picture>
+						<source srcset="{{item.image}}.webp" type="image/webp" />
+							<img loading="lazy" decoding="async" src="{{item.image}}.png" alt="person" class="slider__author-img" />
+					</picture>
+					
 					<div class="slider__info">
 						<h4 class="slider__info-name">{{item.name}}</h4>
 						<span class="slider__info-location">{{item.location}}</span>
