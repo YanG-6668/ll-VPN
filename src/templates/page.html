@@ -93,9 +93,9 @@ title: LaslesVPN
 				{% endfor %}
 			</ul>
 			<div class="rates__price">
-				<h5 class="rates__price-title">
+				<div class="rates__price-title">
 					{{item.price}} <span>{{item.month}}</span>
-				</h5>
+				</div>
 				<button class="button-border rates__price-btn">
 					{{item.button}}
 				</button>
@@ -159,7 +159,7 @@ title: LaslesVPN
 					</picture>
 					
 					<div class="slider__info">
-						<h4 class="slider__info-name">{{item.name}}</h4>
+						<h6 class="slider__info-name">{{item.name}}</h6>
 						<span class="slider__info-location">{{item.location}}</span>
 					</div>
 					<div class="slider__author-rate">
@@ -173,10 +173,10 @@ title: LaslesVPN
 			{% endfor %}
 		</div>
 		<div class="slider__btns">
-			<button class="slider__btns-prev">
+			<button class="slider__btns-prev" aria-label="Left Slide">
 				{{ mixins.icon('arrow-left') }}
 			</button>
-			<button class="slider__btns-next">
+			<button class="slider__btns-next" aria-label="Right Slide">
 				{{ mixins.icon('arrow-right') }}
 			</button>
 		</div>
