@@ -29,18 +29,18 @@ const config = {
         lib          : 'src/lib',
         data         : 'src/data',
         // service worker
-        sw           : 'src/sw'
+        sw           : 'src/'
     },
     dest: {
         root : destPath,
         html : destPath,
+        sw   : destPath,
         css  : destPath + '/css',
         js   : destPath + '/js',
         img  : destPath + '/img',
         fonts: destPath + '/fonts',
         lib  : destPath + '/lib',
-        data : destPath + '/data',
-        sw   : destPath + '/sw'
+        data : destPath + '/data'
     },
 
     setEnv: function(env) {

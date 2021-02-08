@@ -24,9 +24,10 @@ gulp.task('copy:data', () => gulp
 );
 
 gulp.task('copy:sw', () => gulp
-  .src(config.src.sw + '/*.js')
-  .pipe(gulp.dest(config.dest.sw))
+.src(config.src.sw + '/sw.js')
+.pipe(gulp.dest(config.dest.sw))
 );
+// .src(config.src.sw + '/*.js')
 
 gulp.task('copy:lib', () => gulp
   .src(config.src.lib + '/**/*.*')
